@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Latihan django</title>
+    </head>
+    <body>
+        <pre>sentence : {{sentence}}</pre>
+        <pre>tokens : {{tokens}}</pre>
+        <pre>tagged : {{tagged}}</pre>
+        <pre>stop : {{stop}}</pre>
+        <pre>filtered_sentence : {{filtered_sentence}}</pre>
+        <pre>steming : {{steming}}</pre>
+        <pre>
+            <ul>
+                {% for row in words %}
+                    <li>{{row}}</li>
+                {% endfor %}
+            </ul>
+        </pre>
+    </body>
+</html>
